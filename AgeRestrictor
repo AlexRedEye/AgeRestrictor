@@ -1,0 +1,29 @@
+using System;
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("How Old are you?");
+            
+            int age = Convert.ToInt32(Console.ReadLine());
+            
+            Convert.ToInt32(Console.ReadLine());
+            //have to type age twice
+            Console.WriteLine("You Are " + age + " Years Old!");
+            
+            if(age < 18)
+            {
+                Console.WriteLine("You Are Too Young. Wait A Couple Years!");
+            } else if(age == 18)
+            {
+                Console.WriteLine("Man You Are Cutting It Close!");
+            } else
+            {
+                Console.WriteLine(age + " Years Old! DAMN YOU CAN COME IN!");
+            }
+            
+            Console.WriteLine("Press Space To Continue!");
+            Console.ReadKey();
+        }
+    }
